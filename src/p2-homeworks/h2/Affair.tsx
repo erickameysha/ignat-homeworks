@@ -13,10 +13,7 @@ function Affair(props: AffairPropsType) {
     }// need to fix
 
     return (
-
              <li><span>{props.affair.name}</span>  <span >[{props.affair.priority}]</span> <button onClick={deleteCallback}>X</button> </li>
-
-
 
     )
 }
