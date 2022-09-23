@@ -10,6 +10,9 @@ export const loadingReducer = (state = initState, action: ActionType) => { // fi
     switch (action.type) {
         case "LOADING":{
 
+
+
+
             return state = !state
         }
         default:
