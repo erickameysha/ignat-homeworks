@@ -7,24 +7,20 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        // stop
-        clearInterval( timerId)
-    }
+        clearInterval( timerId)    }
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-           setDate(new Date )
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
 
     const onMouseEnter = () => {
-        // show
-        setShow(true)
+setShow(true)
     }
     const onMouseLeave = () => {
-        // close
-        setShow(false)
+setShow(false)
     }
 
     const stringTime =date?.toLocaleTimeString()// fix with date

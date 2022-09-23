@@ -25,8 +25,8 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             error && setError('')
         } else {
 
-            name && setName('')
-            setError('обязательное поле')
+                name && setName('')
+                setError('обязательное поле')
         }
 
         console.log(error)
