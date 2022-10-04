@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hws2/static/css/main.0c6a6362.css",
-    "main.js": "/hws2/static/js/main.191b2b3c.js",
-    "static/js/787.66cb4309.chunk.js": "/hws2/static/js/787.66cb4309.chunk.js",
-    "static/media/avatar.png": "/hws2/static/media/avatar.d947cb9d0d13765666b6.png",
-    "index.html": "/hws2/index.html",
-    "main.0c6a6362.css.map": "/hws2/static/css/main.0c6a6362.css.map",
-    "main.191b2b3c.js.map": "/hws2/static/js/main.191b2b3c.js.map",
-    "787.66cb4309.chunk.js.map": "/hws2/static/js/787.66cb4309.chunk.js.map"
+    "main.css": "/erickameysha/static/css/main.0c6a6362.css",
+    "main.js": "/erickameysha/static/js/main.fff16910.js",
+    "static/js/787.66cb4309.chunk.js": "/erickameysha/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/erickameysha/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/erickameysha/index.html",
+    "main.0c6a6362.css.map": "/erickameysha/static/css/main.0c6a6362.css.map",
+    "main.fff16910.js.map": "/erickameysha/static/js/main.fff16910.js.map",
+    "787.66cb4309.chunk.js.map": "/erickameysha/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c6a6362.css",
-    "static/js/main.191b2b3c.js"
+    "static/js/main.fff16910.js"
   ]
 }
