@@ -30,8 +30,8 @@ background: #F5F7FB;
 
 .friendName {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
+    /*font-weight: 600;/*/
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */

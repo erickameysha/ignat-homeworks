@@ -9,8 +9,11 @@
 
 .name {
     display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 20px;
     width: 145px;
     height: 37px;
 }
