@@ -27,7 +27,7 @@ const Message = (props: MessagePropsType) => {
             </div>
             <div className={s.angle}> </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
-                <Avatar sx={{width: 48, height: 48}}  id={'hw1-avatar-' + props.message.id} alt="Ivan" src={props.message.user.avatar} />
+                <img style={{width: 48, height: 48}}  id={'hw1-avatar-' + props.message.id} alt="Ivan" src={props.message.user.avatar} />
                 {props.message.message.time}
             </div>
         </div>
