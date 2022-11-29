@@ -7,7 +7,7 @@ import {getDependsOnOwnProps} from "react-redux/es/connect/wrapMapToProps";
 
 type PropsType = {
     handleOpen: () => void
-    open: boolean
+
 }
 
 export const Header: FC<PropsType> = ({handleOpen}) => {
@@ -26,7 +26,7 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
     return (
         <>
             {/*headerClass*/}
-            <div id={'hw5-header'} className={'()=>{}'}>
+            <div id={'hw5-header'} className={'headerClass'}>
                 <img
                     src={burgerIcon}
                     id={'hw5-burger-menu'}
