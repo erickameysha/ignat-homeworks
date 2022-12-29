@@ -9,7 +9,7 @@ import App from "../../s1-main/App";
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
     JUNIOR: '/junior',
-    JUNIOR_PLUS: '/junior-plus',
+    JUNIOR_PLUS: '/juniorPlus',
 }
 
 function Pages() {
