@@ -26,6 +26,12 @@
 .secondary {
     color: #0066CC;
     border: 1px solid #0066CC;
+    background-color: transparent;
+    margin-right: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .default {
@@ -63,4 +69,5 @@
 }
 
 .button:disabled {
+    margin-right: 24px;
 }
