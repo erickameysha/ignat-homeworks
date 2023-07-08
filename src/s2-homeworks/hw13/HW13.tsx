@@ -24,7 +24,8 @@ const HW13 = () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://samurai.it-incubator.io/api/3.0/homework/test'
+                // : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
 
         setCode('')
         setImage('')
@@ -34,35 +35,36 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode(`Код ${res.status}!`)
+                setCode('Код 200!')
                 setImage(success200)
-                setInfo(res.data.info)
-                setText(res.data.errorText)
-                console.log(res.status)
+                send(true)
+                setInfo('код 200 - обычно означает что скорее всего всё ок)')
+                setText(`...всё ок)`)
 
             })
-            .catch((e) => {
-           if (e.response.status){
-               setCode(`Ошибка ${e.response.status}!!`)
+            .catch(() => {
+                if(x === false){
+                    setCode('Code 500!')
+                    setImage(error500)
+                    setInfo('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
+                    setText( 'эмитация ошибки на сервере')
+                }
+                if(x === undefined){
+                    setCode('Code 400!')
+                    setImage(error400)
+                    setInfo('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
+                    setText( 'Ты не отправил success в body вообще!')
+                }
+                if(x === null) {
+                    setCode('Error')
+                    setImage(errorUnknown)
+                    setInfo('Error')
+                    setText(``)
+                }
 
-        setImage(e.response.status ===  500 ? error500: error400)
-               setInfo(e.response.data.info)
-               setText(e.response.data.errorText)
-               console.log(e.response.data.info)
-               console.log(e.response.data.text)
-               console.log(e.response.status)
-           }
-           else {
-               setImage(errorUnknown)
-               setInfo(e.name)
-               setCode('Error')
-               setText(e.message)
 
-           }
-            }
-            )
+            })
     }
-
     return (
         <div id={'hw13'}>
             <div className={s2.hwTitle}>Homework #13</div>
@@ -73,7 +75,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
-                        // дописать
+
                         disabled={info === '...loading'}
 
                     >
