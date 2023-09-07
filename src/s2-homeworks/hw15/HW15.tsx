@@ -62,17 +62,8 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
         // sendQuery(
-        sendQuery({
-            page: newPage,
-            count: newCount,
-            sort,
-        })
-
-        // setSearchParams(
-        setSearchParams({
-            page: String(newPage),
-            count: String(newCount),
-        })
+        sendQuery({sort, page: newPage, count: newCount})
+        setSearchParams(JSON.stringify({sort, page: newPage, count: newCount}))
     }
 
     const onChangeSort = (newSort: string) => {
@@ -84,12 +75,10 @@ const HW15 = () => {
         sendQuery({
             sort: newSort,
             count,
-            page,
+            page: 1,
         })
         // setSearchParams(
-        setSearchParams({
-            sort: newSort
-        })
+        setSearchParams(JSON.stringify({sort: newSort, page, count}))
     }
 
     useEffect(() => {
@@ -100,7 +89,7 @@ const HW15 = () => {
             sort,
         })
         setPage(+params.page || 1)
-        setCount(+params.count || 4)
+        setCount(+params.count || 5)
     }, [])
 
     const mappedTechs = techs.map(t => (<div key={t.id} className={s.row}>
