@@ -89,7 +89,7 @@ const HW15 = () => {
             sort,
         })
         setPage(+params.page || 1)
-        setCount(+params.count || 5)
+        setCount(+params.count || 4)
     }, [])
 
     const mappedTechs = techs.map(t => (<div key={t.id} className={s.row}>
